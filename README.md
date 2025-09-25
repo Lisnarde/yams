@@ -17,7 +17,7 @@ Ce dépôt propose une version interactive du jeu, avec une interface simple et 
 
 ## Technologies utilisées
 
-- C# : logique backend (console, éventuellement ASP.NET ou WebAssembly)
+- C# : logique backend (console)
 - JavaScript : interactivité et mécaniques de jeu côté frontend
 - HTML/CSS : mise en page et design
 
