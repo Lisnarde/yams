@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Yam's - Fiche de Résultat et Suivi de Partie</title>
+    <meta name="description" content="Découvrez notre fiche de score Yam's, une solution simple et interactive pour suivre vos parties de Yam's, avec vue globale et tour par tour. Téléchargez ou consultez vos scores en ligne !">
+    <link rel="icon" href="./Images/Yam's.ico"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="navbar">
+        <div class="navbar-links">
+            <a id="acceuil-a" href="accueil.html"><em id="green_text"> -- </em><strong>Accueil</strong><em id="green_text"> -- </em></a>
+            <a href="telechargement.html"><em id="green_text"> -- </em><strong>Téléchargement</strong><em id="green_text"> -- </em></a>
+            <a href="resultat.html"><em id="green_text"> -- </em><strong>Fiche de Résultat</strong><em id="green_text"> -- </em></a>
+        </div>
+    </header>
+    
+    <main>
+        <section id="download-section">
+            <h2>Page de téléchargement de notre application Yam's</h2>
+            <p id="desc-dl">Prêt à commencer votre partie ? Téléchargez notre application Yam's en cliquant sur le bouton ci-dessous. Vous serez opérationnel en quelques secondes !</p>
+        </section>
+        <div id="div-btn-dl">
+            <button id="btn-dl" onclick="window.open('https://gitlab.unistra.fr/violle/starstream/-/raw/fd668387aed72e9b79a9f9c0655cda555d31bfe8/Yams.exe')" style="background-color: transparent; border: none; cursor: pointer;">
+                <img id="img-dl" src="./Images/dl.png" alt="Télécharger l'application Yam's">
+            </button>
+        </div>
+        <section id="instructions-section">
+            <h2>Comment jouer au jeu ?</h2>
+            <p>Pour commencer à jouer, téléchargez simplement notre application depuis notre site officiel. Aucune installation complexe ni configuration n’est requise ! Suivez simplement les instructions ci-dessous en fonction de votre système d’exploitation.</p>
+
+            <ul>
+                <li><strong>Pour Windows :</strong> Après le téléchargement, ouvrez un terminal et executez la commande suivante : <code>reg add HKEY_CURRENT_USER\Console /v VirtualTerminalLevel /t REG_DWORD /d 0x00000001 /f</code>. Puis localisez le fichier et double-cliquez dessus pour démarrer l'application. Le jeu se lancera automatiquement sans étapes supplémentaires.</li>
+                <br>
+                <li><strong>Pour Linux :</strong> Ouvrez un terminal dans le dossier où le fichier a été téléchargé, puis tapez les commandes suivantes pour rendre le fichier exécutable et lancer le jeu : <code>chmod +x ./Yams.exe && ./Yams.exe</code> </li>
+            </ul>
+
+            <p>Une fois ces étapes réalisées, vous pouvez commencer à jouer immédiatement. Préparez-vous pour des parties palpitantes et suivez vos scores grâce à notre application !</p>
+        </section>
+
+        <section id="score-tracking-section">
+            <h2>Suivi de score et fiche de résultat</h2>
+            <p>Avec notre application Yam's, jouer et conserver une trace de vos scores n'a jamais été aussi simple. La fiche de résultat intégrée vous permet de suivre chaque tour et de visualiser les scores. Notre fiche de résultat est conçue pour une clarté optimale, vous aidant à analyser vos performances et à améliorer votre stratégie. Relevez le défi et visez toujours le meilleur score !</p>
+        </section>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>
+

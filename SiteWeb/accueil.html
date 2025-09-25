@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Score Yam's - Fiche de Résultat et Suivi de Partie</title>
+        
+        <meta name="description" content="Découvrez notre fiche de score Yam's, une solution simple et interactive pour suivre vos parties de Yam's, avec vue globale et tour par tour. Téléchargez ou consultez vos scores en ligne !">
+        
+        <link rel="icon" href="./Images/Yam's.ico"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header id="navbar">
+        <div class="navbar-links">
+            <a id="acceuil-a" href="accueil.html"><em id="green_text"> -- </em><strong>Accueil</strong><em id="green_text"> -- </em></a>
+            <a href="telechargement.html"><em id="green_text"> -- </em><strong>Téléchargement</strong><em id="green_text"> -- </em></a>
+            <a href="resultat.html"><em id="green_text"> -- </em><strong>Fiche de Résultat</strong><em id="green_text"> -- </em></a>
+        </div>
+    </header>
+    
+    <h2 id="titre-presentation">Présentation du jeu de Yam's</h2>
+    <p id="p-presentation">
+        Le <strong>Yam's</strong> (également connu sous les noms de <strong>Yatzee</strong> ou <strong>Yatzy</strong>) est un jeu de société classique de hasard raisonné, où les joueurs cherchent à réaliser des combinaisons de dés pour accumuler le plus de points possible. L’histoire de ce jeu remonte à 1954 au Canada, lorsqu’un couple a créé le « <em>Yacht Game</em> » pour divertir leurs invités lors de croisières sur leur yacht. Ce jeu de dés a rapidement conquis leurs amis, qui appréciaient la convivialité et le défi qu’il offrait. Souhaitant partager leur création, le couple a contacté le fabricant de jeux Edwin S. Lowe pour produire des exemplaires du jeu. Séduit par son potentiel, Lowe a racheté les droits, rebaptisant le jeu « Yahtzee » et le commercialisant pour un succès mondial.</p>
+    <p id="p-presentation">
+        Le jeu de Yahtzee se joue avec cinq dés. Le but est de lancer les dés et d’obtenir des combinaisons spécifiques, qui varient en fonction des règles : on cherche par exemple une paire, un double paire, un brelan (trois dés identiques), un full (un brelan et une paire), une suite (série de dés consécutifs), un carré (quatre dés identiques), ou encore un Yahtzee (aussi appelé Yam’s), obtenu lorsque les cinq dés affichent la même valeur !
+    </p>
+    
+    <h2 id="titre-regles"> Les règles du jeu de Yam's</h2>
+    <h3 id="titre-but">But du Jeu</h3>
+    <p id="p-but">Le but de Yam's est d'obtenir le maximum de points en accomplissant différents challenges en lançant 5 dés. 
+    Le jeu se joue à 2 joueurs et comporte 13 tours. Chaque tour, un joueur choisit un challenge unique parmi les 13 
+    disponibles, une fois un challenge choisi, il devient inaccessible pour le reste de la partie.</p>
+
+    <h3 id="titre-MiseEnPage">Mise en Place</h3>
+    <ul id="liste-MiseEnPage">
+        <li>5 dés</li>
+        <li>Chaque joueur joue tour à tour</li>
+        <li>Chaque joueur entre son pseudo pour débuter la partie</li>
+    </ul>
+
+    <h3 id="titre-deroulement">Déroulement d'un Tour</h3>
+    <ol id="liste-deroulement">
+        <li><strong>Lancer les Dés</strong> : Le joueur lance les 5 dés.</li>
+        <li><strong>Conserver les Dés</strong> : Après le premier lancer, le joueur choisit les dés qu’il souhaite garder.</li>
+        <li><strong>Relancer les Dés</strong> (jusqu'à 2 fois) : Le joueur peut relancer les dés non gardés jusqu'à 2 fois supplémentaires, pour un total maximum de 3 lancers.</li>
+        <li><strong>Choisir un Challenge</strong> : À la fin de ses lancers, le joueur sélectionne un challenge encore disponible et marque des points selon le résultat obtenu. Si le joueur n’a pas les dés requis pour le challenge choisi, il marque 0 point pour ce tour.</li>
+    </ol>
+
+    <h3 id="title-challenges">Challenges Disponibles</h3>
+    <p id="p-challenge">Il existe 13 challenges, divisés en <strong>challenges mineurs</strong> et <strong>challenges majeurs</strong>.</p>
+
+    <h4 id="titre-mineurs">Challenges Mineurs</h4>
+    <p id="p-mineurs">Les challenges mineurs consistent à obtenir un maximum de valeurs spécifiques sur les dés.</p>
+    <table border="1" id="tableau-mineurs">
+        <thead>
+            <tr>
+                <th>Challenge</th>
+                <th>Objectif</th>
+                <th>Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Nombre de 1</td><td>Obtenir le maximum de 1</td><td>Somme des dés avec la valeur 1</td></tr>
+            <tr><td>Nombre de 2</td><td>Obtenir le maximum de 2</td><td>Somme des dés avec la valeur 2</td></tr>
+            <tr><td>Nombre de 3</td><td>Obtenir le maximum de 3</td><td>Somme des dés avec la valeur 3</td></tr>
+            <tr><td>Nombre de 4</td><td>Obtenir le maximum de 4</td><td>Somme des dés avec la valeur 4</td></tr>
+            <tr><td>Nombre de 5</td><td>Obtenir le maximum de 5</td><td>Somme des dés avec la valeur 5</td></tr>
+            <tr><td>Nombre de 6</td><td>Obtenir le maximum de 6</td><td>Somme des dés avec la valeur 6</td></tr>
+        </tbody>
+    </table>
+    <p id="p-bonus"><strong>Bonus</strong> : Si la somme des points obtenus dans les challenges mineurs atteint 63 points ou plus, 
+    le joueur reçoit un bonus de 35 points.</p>
+
+    <h4 id="titre-majeurs">Challenges Majeurs</h4>
+    <p id="p-majeurs">Les challenges majeurs sont des combinaisons spéciales ou des séquences précises.</p>
+    <table border="1" id="tableau-majeurs">
+        <thead>
+            <tr>
+                <th>Challenge</th>
+                <th>Objectif</th>
+                <th>Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Brelan</td><td>Obtenir 3 dés de même valeur</td><td>Somme des 3 dés identiques</td></tr>
+            <tr><td>Carré</td><td>Obtenir 4 dés de même valeur</td><td>Somme des 4 dés identiques</td></tr>
+            <tr><td>Full</td><td>Obtenir 3 dés de même valeur + 2 dés de même valeur</td><td>25 points</td></tr>
+            <tr><td>Petite Suite</td><td>Obtenir une suite de 4 chiffres (1-2-3-4, 2-3-4-5 ou 3-4-5-6)</td><td>30 points</td></tr>
+            <tr><td>Grande Suite</td><td>Obtenir une suite de 5 chiffres (1-2-3-4-5 ou 2-3-4-5-6)</td><td>40 points</td></tr>
+            <tr><td>Yam's</td><td>Obtenir 5 dés de même valeur</td><td>50 points</td></tr>
+            <tr><td>Chance</td><td>Obtenir le maximum de points possibles avec les dés obtenus</td><td>Somme totale des dés</td></tr>
+        </tbody>
+    </table>
+
+    <h3 id="titre-fin">Fin de la Partie</h3>
+    <p id="p-fin">La partie se termine après 13 tours, une fois que chaque joueur a complété tous les challenges. Le joueur avec le 
+    plus grand nombre de points remporte la partie.</p>
+
+    <h3 id="titre-exemple">Exemple de Tour</h3>
+    <p id="p-exemple">Le joueur A lance les 5 dés et obtient <strong>[2, 3, 3, 5, 6]</strong>. Il décide de garder les deux 3 et relance les autres dés. 
+    Au second lancer, il obtient <strong>[3, 3, 3, 2, 6]</strong> et décide de garder les trois 3. Lors de son troisième lancer, 
+    il relance les deux dés restants et obtient <strong>[3, 3, 3, 5, 3]</strong>. Avec quatre 3, il choisit le challenge "Carré" 
+    et marque la somme des quatre 3, soit <strong>12 points</strong>.</p>
+
+    <p id="bonne-chance">Bonne chance et amusez-vous bien en jouant au Yam's !</p>
+    <script src="script.js"></script>
+</body>
+</html>
