@@ -1,18 +1,18 @@
 # Yam's
 
-Une implémentation en console du jeu de dés classique Yams (Yahtzee), développée en C#, avec un site web en HTML, CSS et JavaScript pour explorer les résultats.
+Implémentation en console du jeu de dés Yams (Yahtzee), développée en C#, avec un site web en HTML, CSS et JavaScript pour explorer les résultats.
 
 ## Aperçu
 
 Le Yams est un jeu de dés populaire où les joueurs lancent cinq dés afin de réaliser des combinaisons spécifiques et marquer des points.
-Ce dépôt propose une version interactive du jeu, avec une interface simple et un système de score automatique.
+Ce dépôt en propose une interface simple et un système de score automatique.
 
 ## Fonctionnalités
 
 - Jouer à Yams (Yahtzee) dans la console et consulter les résultats sur le site web
 - Lancers et relancers de dés interactifs
 - Feuille de score avec calcul automatique
-- Règles et guide de jeu intégrés
+- Règles, guide de jeu et téléchargement de l'executable intégrés sur le site web
 - Design responsive, adapté aux ordinateurs et mobiles
 
 ## Technologies utilisées
@@ -28,3 +28,13 @@ Ce dépôt propose une version interactive du jeu, avec une interface simple et 
 - À la fin de la partie, copiez le code donné
 - Ouvrir la page de `résultat.html`
 - Coller le code et admirez vos résultats
+
+## Exemple affichage
+
+# Éxecutable
+
+![Affichage Yam](affichageyam.png)
+
+# Site Web
+
+![Affichage Site](affichagesite.png)
