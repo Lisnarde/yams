@@ -31,10 +31,10 @@ Ce dépôt en propose une interface simple et un système de score automatique.
 
 ## Exemple affichage
 
-# Executable
+### Executable
 
 ![Affichage Yam](img/affichageyam.png)
 
-# Site Web
+### Site Web
 
 ![Affichage Site](img/affichagesite.png)
